@@ -7,7 +7,6 @@ function App() {
 
   const addTask = () => {
     setTodoList([...todoList, currentTask]);
-    console.log(todoList);
   }
 
   return (
@@ -23,7 +22,12 @@ function App() {
         />
         <button onClick={addTask}>Add Task</button>
       </div>
-      <hr />
+      <hr /> 
+      <ul>
+        {todoList.map((val, key) => {
+          return <li key={key}>{val} </li>
+        })}
+      </ul>
     </div>
   );
 }
