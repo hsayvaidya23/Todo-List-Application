@@ -13,6 +13,7 @@ input {
 button {
   width: 100px;
   height:40px;
+  margin-right: 10px;
 }
 
 ul {
